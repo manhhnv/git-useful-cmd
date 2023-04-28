@@ -21,6 +21,12 @@ git show-branch -a \
 | sed 's/[\^~].*//'
 ```
 
+hoặc bạn có thể sử dụng command sau:
+
+```bash
+git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref @)" | head -1 | awk -F'[]~^[]' '{print $2}'
+```
+
 ## Xoá commit với reset
 
 Khi bạn muốn xoá commit ở dưới local và remote, bạn có thể thực hiện các bước dưới đây:
