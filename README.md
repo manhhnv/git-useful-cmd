@@ -42,3 +42,17 @@ git reset HEAD~n (thay đổi giá trị n - số lượng mà bạn muốn)
 ```bash
 git push {remote} {branch} -f
 ```
+
+### Xóa branch trên local và remote
+
+- Local
+
+```bash
+$ git branch -d {localBranchName}
+```
+
+- Remote
+
+```bash
+$ git push origin --delete {remoteBranchName}
+```
