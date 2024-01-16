@@ -63,3 +63,13 @@ $ git push origin --delete {remoteBranchName}
 $ git fetch --all & \
   git reset --hard {origin}/{branch_name}
 ```
+
+## Thực hiện rollback sau khi git reset HEAD~n
+
+```bash
+$ git reflog
+```
+
+```bash
+$ git reset --hard HEAD@{n}
+```
