@@ -73,3 +73,11 @@ $ git reflog
 ```bash
 $ git reset --hard HEAD@{n}
 ```
+
+## Thực hiện replace bằng 1 branch khác
+
+Lấy toàn bộ code của branch khác thay thế cho branch hiện tại
+
+```bash
+$ git reset --hard {branch_name}
+```
