@@ -81,3 +81,11 @@ Lấy toàn bộ code của branch khác thay thế cho branch hiện tại
 ```bash
 $ git reset --hard {branch_name}
 ```
+
+## Pull submodules together
+
+Thực hiện pull các submodules có trong repository
+
+```bash
+$ git submodule update --init --recursive
+```
